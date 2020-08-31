@@ -15,6 +15,11 @@
 
 
 
+# 视频
+
+* [基於微服務與雲原生應用的持續交付實踐](https://www.youtube.com/watch?v=-noLaByJBDk)
+
+
 # 有用的参考
 
 * [云原生（Cloud Native）- 移动App研发新范式](https://www.douban.com/note/638744953/)
