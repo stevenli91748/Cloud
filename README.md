@@ -1,4 +1,7 @@
 
+**云原生应用12个类别：编排、应用程序开发、监控、日志记录、跟踪、容器注册、存储和数据库、运行时间、服务发现、服务网格、服务代理、安全以及数据流和消息流**
+
+
 [云原生应用之路——从Kubernetes到Cloud Native](https://jimmysong.io/kubernetes-handbook/cloud-native/from-kubernetes-to-cloud-native.html)|
 ---|
 
