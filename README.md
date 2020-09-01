@@ -18,7 +18,7 @@
 # 视频
 
 * [基於微服務與雲原生應用的持續交付實踐](https://www.youtube.com/watch?v=-noLaByJBDk)
-
+* [AWS云计算证书及相关工作讲解](https://www.jiuzhang.com/seminar/153/)
 
 # 有用的参考
 
