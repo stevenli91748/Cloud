@@ -21,7 +21,7 @@
 * [AWS云计算证书及相关工作讲解](https://www.jiuzhang.com/seminar/153/)
 
 # 有用的参考
-
+* [ AWS 操作教程](https://aws.amazon.com/cn/getting-started/hands-on/?awsf.getting-started-content-type=*all&awsf.getting-started-category=*all)
 * [云原生（Cloud Native）- 移动App研发新范式](https://www.douban.com/note/638744953/)
 
 
