@@ -10,8 +10,8 @@
  ---|---|
 
 
-[AWS Certified Solutions Architect - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=Ia-UEYYR44s)|
----|
+[AWS Certified Solutions Architect - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=Ia-UEYYR44s)|[How I Passed 3 AWS Exams in 3 Months 2020](https://www.youtube.com/watch?v=Z-8bVozLo0w)|
+---|---|
 
 
 
