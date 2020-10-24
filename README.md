@@ -16,7 +16,7 @@
 
 
 # 视频
-
+* [ AWS Full Course - Learn AWS In 11 Hours](https://www.youtube.com/watch?v=cJLJrLlZ8no)
 * [基於微服務與雲原生應用的持續交付實踐](https://www.youtube.com/watch?v=-noLaByJBDk)
 * [AWS云计算证书及相关工作讲解](https://www.jiuzhang.com/seminar/153/)
 * [AWS SysOps Administrator Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=KX_AfyrhlgQ)
