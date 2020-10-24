@@ -13,8 +13,7 @@
 [AWS Certified Solutions Architect - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=Ia-UEYYR44s)|[How I Passed 3 AWS Exams in 3 Months 2020](https://www.youtube.com/watch?v=Z-8bVozLo0w)|
 ---|---|
 
-[AWS Certified Solutions Architect Associate Practice test Exam Dumps 2020---800+ UNIQUE practice questions for AWS Solution Architect Associate certification exam.
-](https://skillcertpro.com/product/aws-certified-solutions-architect-associate-practice-exam-set-2020/)|
+[AWS Certified Solutions Architect Associate Practice test Exam Dumps 2020---800+ UNIQUE practice questions for AWS Solution Architect Associate certification exam.](https://skillcertpro.com/product/aws-certified-solutions-architect-associate-practice-exam-set-2020/)|
 ---|
 
 [Build AWS Multi-Tier Architecture Project from Scratch](https://www.youtube.com/watch?v=DoaeNEytnuA&list=RDCMUCCktnahuRFYIBtNnKT5IYyg&start_radio=1&t=2192)|
