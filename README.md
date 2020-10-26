@@ -39,7 +39,7 @@
 * [AWS之EC2搭建WordPress博客](https://www.cnblogs.com/zhijian1574/p/11957133.html)
 * [AWS之EC2实例搭建LAMP服务器](https://www.cnblogs.com/zhijian1574/p/11957128.html)
 * [(导航页)Amazon Lightsail 部署LAMP应用程序(HA)](https://www.cnblogs.com/zhijian1574/p/11957172.html)
-
+* [Deploy NodeJS APP on Amazon EC2 Instance](https://www.youtube.com/watch?v=tasoWTGM1hA)
 
 ## 阿里云的参考
 * [使用GCP_EC2云服务器搭部署网络服务](https://www.cnblogs.com/zhijian1574/p/11957138.html)
