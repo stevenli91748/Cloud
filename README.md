@@ -26,9 +26,22 @@
 * [AWS云计算证书及相关工作讲解](https://www.jiuzhang.com/seminar/153/)
 * [AWS SysOps Administrator Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=KX_AfyrhlgQ)
 # 有用的参考
+
+## Amazon的参考
+* [aws申请ec2实例后如何用root用户登录](https://www.cnblogs.com/yangzhaon/p/11969481.html)
 * [AWS TECHNOLOGY SKILL PLATFORM CERTIFICATION](https://www.claydesk.com/)
 * [ AWS 操作教程](https://aws.amazon.com/cn/getting-started/hands-on/?awsf.getting-started-content-type=*all&awsf.getting-started-category=*all)
 * [云原生（Cloud Native）- 移动App研发新范式](https://www.douban.com/note/638744953/)
 * [AWS Certified Developer - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=RrKRN9zRBWs&t=3s)
+* [部署SpringBoot项目到亚马逊aws云服务上](https://www.twblogs.net/a/5cb0c671bd9eee480f075dcf/?lang=zh-cn)
+* [在AWS EC2上部署springboot项目](https://www.cnblogs.com/yelao/p/12589098.html)
+* [AWS EC2 搭建 Hadoop 和 Spark 集群](https://www.cnblogs.com/massquantity/p/12088449.html)
+* [AWS之EC2搭建WordPress博客](https://www.cnblogs.com/zhijian1574/p/11957133.html)
+* [AWS之EC2实例搭建LAMP服务器](https://www.cnblogs.com/zhijian1574/p/11957128.html)
+* [(导航页)Amazon Lightsail 部署LAMP应用程序(HA)](https://www.cnblogs.com/zhijian1574/p/11957172.html)
+
+
+## 阿里云的参考
+* [使用GCP_EC2云服务器搭部署网络服务](https://www.cnblogs.com/zhijian1574/p/11957138.html)
 
 
