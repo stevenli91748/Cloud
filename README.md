@@ -37,6 +37,7 @@
 * [AWS Certified Developer - Associate 2020 (PASS THE EXAM!)](https://www.youtube.com/watch?v=RrKRN9zRBWs&t=3s)
 * [部署SpringBoot项目到亚马逊aws云服务上](https://www.twblogs.net/a/5cb0c671bd9eee480f075dcf/?lang=zh-cn)
 * [在AWS EC2上部署springboot项目](https://www.cnblogs.com/yelao/p/12589098.html)
+* [Spring Cloud 微服务(五) 部署到AWS ECS](https://www.jianshu.com/p/1617d6948ee8)
 * [AWS EC2 搭建 Hadoop 和 Spark 集群](https://www.cnblogs.com/massquantity/p/12088449.html)
 * [AWS之EC2搭建WordPress博客](https://www.cnblogs.com/zhijian1574/p/11957133.html)
 * [AWS之EC2实例搭建LAMP服务器](https://www.cnblogs.com/zhijian1574/p/11957128.html)
