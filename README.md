@@ -30,6 +30,7 @@
 # 有用的参考
 
 ## Amazon的参考
+* [Spring官方文档： Spring Cloud AWS](https://cloud.spring.io/spring-cloud-aws/spring-cloud-aws.html#_basic_setup)
 * [aws申请ec2实例后如何用root用户登录](https://www.cnblogs.com/yangzhaon/p/11969481.html)
 * [AWS TECHNOLOGY SKILL PLATFORM CERTIFICATION](https://www.claydesk.com/)
 * [ AWS 操作教程](https://aws.amazon.com/cn/getting-started/hands-on/?awsf.getting-started-content-type=*all&awsf.getting-started-category=*all)
