@@ -4,6 +4,9 @@
 [AWS官方操作教程集---重要](https://aws.amazon.com/cn/getting-started/hands-on/)|[AWS官方实验教程](https://www.wellarchitectedlabs.com/security/)|
 ---|---|
 
+[AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/?nc1=f_cc)|
+---|
+
 [云原生应用之路——从Kubernetes到Cloud Native](https://jimmysong.io/kubernetes-handbook/cloud-native/from-kubernetes-to-cloud-native.html)|
 ---|
 
