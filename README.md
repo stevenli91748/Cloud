@@ -22,6 +22,9 @@
 [AWS CodePipeline tutorial  Build a CI/CD Pipeline on AWS](https://www.youtube.com/watch?v=NwzJCSPSPZs)|
 ---|
 
+[AWS 上的项目：将整体式应用程序拆分为微服务（使用 Amazon Elastic Container Service、Docker 和 Amazon EC2）](https://aws.amazon.com/cn/getting-started/hands-on/break-monolith-app-microservices-ecs-docker-ec2/)|
+---|
+
 # 视频
 * [AWS Certifications Roadmap for Everyone](https://www.youtube.com/watch?v=P2FKdqPbyk0)
 * [ AWS Full Course - Learn AWS In 11 Hours](https://www.youtube.com/watch?v=cJLJrLlZ8no)
