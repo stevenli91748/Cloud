@@ -7,6 +7,13 @@
 [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/?nc1=f_cc)|[AWS 容器](https://aws.amazon.com/cn/containers/?nc1=f_cc)|[官方AWS SDK for Java 2.0 documentation examples](https://github.com/awsdocs/aws-doc-sdk-examples)|
 ---|---|---|
 
+* [使用 Spring Boot、Amazon DynamoDB 和适用于 Java 的 AWS 开发工具包 2.x 创建您的首个 Web 应用程序 »](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/javav2/usecases/creating_first_project)
+* [使用 Spring Boot、Amazon SQS 和适用于 Java 的 AWS 开发工具包 2.x 创建消息收发 Web 应用程序 »](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/javav2/usecases/creating_message_application)
+* [使用 Spring Boot、Amazon Rekognition 和适用于 Java 的 AWS 开发工具包 2.x 创建图像识别 Web 应用程序 »](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/javav2/usecases/creating_photo_analyzer_app)
+* [使用 Kinesis Data Streams 和适用于 Java 的 AWS 开发工具包 2.x 创建流式应用程序 »](https://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/examples-kinesis.html)
+
+
+
 [云原生应用之路——从Kubernetes到Cloud Native](https://jimmysong.io/kubernetes-handbook/cloud-native/from-kubernetes-to-cloud-native.html)|
 ---|
 
