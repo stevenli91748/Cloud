@@ -52,6 +52,8 @@
       * [Application Load Balancer (ALB) ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
       * [AWS Web 应用程序防火墙 (WAF)](https://aws.amazon.com/cn/waf/)
       * [安全组](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+      * [深度防御](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
+      * [AWS 联网和内容分发](https://aws.amazon.com/cn/products/networking/)
     * 1.3 数据加密
   * 2. 性能效率
   * 3. 可靠性
