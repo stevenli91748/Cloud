@@ -39,7 +39,24 @@
 ---|
 
 # 目录
-* AWS 架构完善的框架和五大支柱
+* [AWS 架构完善的框架和五大支柱](https://aws.amazon.com/cn/getting-started/fundamentals-core-concepts/?e=gs2020&p=gsrc)
+  * 1. 安全性
+    * 1.1 Identity and Access Management (IAM)
+      * 1.1.1 权限边界
+      * 1.1.2 服务控制策略
+      * 1.1.3 基于身份和基于资源的策略
+      * 1.1.4 访问控制列表
+      * 1.1.5 会话策略
+    * 1.2 网络安全
+      * [Amazon Virtual Private Cloud (VPC)](https://aws.amazon.com/cn/vpc/)
+      * [Application Load Balancer (ALB) ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+      * [AWS Web 应用程序防火墙 (WAF)](https://aws.amazon.com/cn/waf/)
+      * [安全组](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+    * 1.3 数据加密
+  * 2. 性能效率
+  * 3. 可靠性
+  * 4. 卓越运营
+  * 5. 成本优化
 
 
 
