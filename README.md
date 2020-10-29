@@ -73,11 +73,13 @@
           * 基于无服务器的计算---可消除大部分管理和扩展复杂性，但存在硬性系统限制，并且需要采用新的工具链和流程
         * 存储---存储是数据的静态存储（例如，对象存储）
           * 文件存储
+            * [EFS](https://docs.aws.amazon.com/efs/?id=docs_gateway)这样的文件系统非常适合让多个客户端访问同一数据
           * 块存储
             * [EBS](https://docs.aws.amazon.com/ebs/?id=docs_gateway)这样的块存储服务非常适合持久存储来自单个 EC2 实例的数据
-            * 
           * 对象存储
+            * [S3](https://docs.aws.amazon.com/s3/?id=docs_gateway)这样的对象存储非常适合需要由任意数量的客户端访问的大数据 Blob
           * 存档存储
+            * [S3 Glacier ](https://docs.aws.amazon.com/glacier/?id=docs_gateway)这样的存档存储非常适合访问不频繁的大量数据
         * 数据库---数据库是数据的有组织存储（例如，关系数据库）
         * 网络---网络处理您的数据的移动（例如，内容交付网络）
       * 扩展
