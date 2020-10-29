@@ -60,6 +60,11 @@
       * [深度防御](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
       * [AWS 联网和内容分发](https://aws.amazon.com/cn/products/networking/)
     * 1.3 数据加密
+      * [Application Load Balancer (ALB) ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+      * [Amazon Key Management Service (KMS)](https://aws.amazon.com/cn/kms/)
+      * [客户管理的密钥 (CMK)](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-create-cmk.html)
+      * [AWS CloudTrail ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+      * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
   * 2. 性能效率
   * 3. 可靠性
   * 4. 卓越运营
