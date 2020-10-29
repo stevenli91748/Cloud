@@ -58,7 +58,7 @@
         * Application Load Balancers
         * Network Load Balancers
         * Classic Load Balancers
-      * [AWS Web 应用程序防火墙 (WAF)](https://aws.amazon.com/cn/waf/)
+      * [AWS Web 应用程序防火墙 (WAF)](https://aws.amazon.com/cn/waf/)保护您的 Web 应用程序免遭常见 Web 漏洞的攻击
       * [安全组](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
       * [深度防御](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
       * [AWS 联网和内容分发](https://aws.amazon.com/cn/products/networking/)
@@ -104,6 +104,11 @@
             * [Elasticsearch Service ](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway)是一种托管服务，让用户能够轻松部署、运营和扩展 Elasticsearch (一种常见的开源搜索和分析引擎)。Amazon ES 还提供多种安全选项、高可用性、数据持久性以及对 Elasticsearch API 的直接访问权限
         * 网络服务类别---网络处理您的数据的移动（例如，内容交付网络）
       * 扩展
+         * [Route 53 路由策略](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+         * [ALB 路由策略](https://aws.amazon.com/cn/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/)
+         * [Auto Scaling](https://docs.aws.amazon.com/autoscaling/?id=docs_gateway)AWS 提供多种服务，可用于扩展您的应用程序,Auto Scaling 由 Amazon CloudWatch 支持，除 CloudWatch 以及您使用的其他 AWS 资源的服务费外，不额外收取费用
+         * [Route 53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
+         * [Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/?id=docs_gateway) 自动分配间应用程序的传入流量在多个目标， 如Amazon EC2 实例。它监控健康目标上的已注册目标和流量路的健康状况。Elastic Load Balancing 支持三种负载均衡器：应用程序负载均衡器、网络负载均衡器和 Classic 负载均衡器
   * 3. 可靠性
   * 4. 卓越运营
   * 5. 成本优化
