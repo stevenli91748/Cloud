@@ -110,7 +110,60 @@
          * [2.6.4 Route 53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
          * [2.6.5 Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/?id=docs_gateway) 自动分配间应用程序的传入流量在多个目标， 如Amazon EC2 实例。它监控健康目标上的已注册目标和流量路的健康状况。Elastic Load Balancing 支持三种负载均衡器：应用程序负载均衡器、网络负载均衡器和 Classic 负载均衡器
   * 3 可靠性
+    * 三个级别的故障隔离区
+      * [AWS re:Invent 2018：AWS 如何最大程度地降低故障的影响半径](https://www.youtube.com/watch?v=swQbA4zub20)
+      * [资源和请求级别的故障隔离区]()AWS 服务根据给定维度（如资源 ID）对所有资源和请求进行分区。这些分区称为单元。单元被设计为独立存在，并在将故障限制在自身范围内。在背后，AWS 利用随机分区之类的技术来限制影响半径。每次您提出请求或创建资源时，所有这些都会以透明的方式发生，并且您不需要任何其他操作。
+        * [随机分区](https://aws.amazon.com/cn/builders-library/workload-isolation-using-shuffle-sharding/?did=ba_card&trk=ba_card#What_is_shuffle_sharding.3F)
+      * [用用区级别的故障隔离区]()AWS 可用区 (AZ) 是完全独立的设施，具有专用的电源、服务和网络功能。可用区彼此之间在地理上相距较远，以免因火灾和洪水等环境危害而出现相关故障。通过在多个可用区中部署服务的冗余实例，可以在可用区级别实现故障隔离。这样做意味着一个可用区中的电源事件不会影响您在另一个可用区中的流量。关于延迟，尽管 AZ 在地理位置上是有距离的，但彼此之间的距离足够近，以至于 AZ 之间的网络延迟很小。这使得某些功能（如同步数据复制）可以在可用区之间实现。
+      * [区域级别的故障隔离区]()AWS 区域提供了最极致的隔离方式。每个区域都是一个完全自治的数据中心，由两个或多个可用区组成。通过在不同的 AWS 区域之间部署服务的冗余副本，可以在区域级别实现故障隔离（这正是 AWS 在自己的服务上所使用的方式）。如果您需要非常高的可用性，可考虑部署到多个区域。请注意，由于区域之间没有共享的基础设施，因此跨多个区域运行服务会产生大量开销。有一些服务和功能可以帮助您进行多区域构建。例如，您可以使用 AWS 的可扩展 DNS 服务 Route53 在不同区域之间路由流量。您还可以使用 DynamoDB 全局表和 S3 跨区域复制之类的功能来跨区域复制数据
+        * [DynamoDB 全局表](https://aws.amazon.com/cn/dynamodb/global-tables/)全局表基于 Amazon DynamoDB 的全球覆盖范围构建，为您提供一个完全托管的多区域、多主控数据库，该数据库为大规模的全局应用程序提供快速的本地读写性能。全局表会在您选择的 AWS 区域中自动复制您的 DynamoDB 表
+        * [S3 跨区域复制](https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html)
+        * [Route53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
+    * 限制的两种类型
+      * 可以通过向 AWS 请求提高上限的软限制
+        * [Service Quotas](https://docs.aws.amazon.com/servicequotas/?id=docs_gateway) is a service for viewing and managing your quotas easily and at scale as your AWS workloads grow. Quotas, also referred to as limits, are the maximum number of resources that you can create in an AWS account.
+          * [所有 AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html)
+        * [AWS Trusted Advisor](https://aws.amazon.com/cn/premiumsupport/technology/trusted-advisor/)降低成本、提高性能并改善安全性
+        * [并行 Lambda 执行](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html)
+        * [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/?id=docs_gateway)提供可靠、可调整且灵活的监测解决方案，让您可在短短几分钟内开始使用。您不再需要设置、管理和扩展监控系统和基础设施了
+        * [使用 Trusted Advisor 和 Amazon CloudWatch 监控服务限制](https://aws.amazon.com/cn/blogs/mt/monitoring-service-limits-with-trusted-advisor-and-amazon-cloudwatch/)
+        * [awslimitchecker](https://github.com/jantman/awslimitchecker)
+      * 不能提高上限的硬限制
   * 4 卓越运营
+    * 基础设施即代码
+      * [基础设施即代码 (IaC) ](https://en.wikipedia.org/wiki/Infrastructure_as_code)是通过计算机可读配置文件管理基础设施的过程。IaC 是实现基础设施自动化的基础。您无需创建手动预置服务，而是创建描述所需资源的模板。然后，IaC 平台将代您预置和配置资源。IaC 为您提供了一种声明式的自动预置基础设施的方式。它使您可以像对待代码一样对待基础设施，使用相同的工具（例如，git）和流程（例如，代码审查）。传统上，我们使用 CloudFormation 服务在 AWS 上实现 IaC。CloudFormation 需要使用 JSON 或 YAML 声明您的资源。如果您不喜欢这些配置语言，AWS 还提供了 Cloud Development Kit (CDK)，让您可以使用 JavaScript、Python 和 Java 等本机编程语言来编写 CloudFormation 模板
+      * [ CloudFormation](https://docs.aws.amazon.com/cloudformation/?id=docs_gateway)借助 AWS CloudFormation，您可以有预见性地、重复地创建和预置 AWS 基础设施部署。它可以帮助您利用 AWS 产品 (如 Amazon EC2、Amazon Elastic Block Store、Amazon SNS、Elastic Load Balancing 和 Auto Scaling) 在云中构建高度可靠、高度可扩展且经济高效的应用程序，为您免除创建和配置底层 AWS 基础设施之忧。借助 AWS CloudFormation，您可以使用模板文件，将资源集作为一个单元 (堆栈) 进行创建和删除
+        * [CloudFormation 属性参考](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+      * [Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/?id=docs_gateway)is a software development framework for defining your cloud infrastructure in code and provisioning it through AWS CloudFormation
+        * [CDK API 参考](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html)
+    * [可观测性三步]()可观测性是衡量系统内部状态的过程。通常这样做是为了将其优化到某个所需的最终状态.要实现卓越运营，您需要改进系统，而改善系统则要求您能够衡量系统。建立坚实的可观测性基础使您能够跟踪自动化的影响，并不断进行改进
+      * 收集---收集是在评估系统状态时汇总所有必要指标的过程
+        * 基础设施级指标---这些指标由 AWS 服务自动发出，并由 CloudWatch 服务收集某些服务还会发出可通过 CloudWatch Logs 启用和收集的结构化日志
+          * [CloudWatch ](https://docs.aws.amazon.com/cloudwatch/?id=docs_gateway)提供可靠、可调整且灵活的监测解决方案，让您可在短短几分钟内开始使用。您不再需要设置、管理和扩展监控系统和基础设施了
+          * [CloudWatch Logs ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+        * 应用程序级指标---这些指标由您的软件生成，可以由 CloudWatch 自定义指标 收集,可以使用 CloudWatch Logs 存储软件日志或将其上传到 S3
+          * [CloudWatch 自定义指标 ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)
+        * 账户级指标---这些指标由您的 AWS 账户记录，可以由 CloudTrail 服务收集
+          * [AWS CloudTrail](https://docs.aws.amazon.com/cloudtrail/?id=docs_gateway)
+      * 分析---要分析收集的指标，您可以使用 AWS 提供的众多数据库和分析解决方案之一
+        * [AWS 分析服务概述](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html)
+        * 要分析存储在 CloudWatch Logs 中的日志，可考虑使用 CloudWatch Logs Insight，该服务可让您交互式地搜索和分析 Cloudwatch 日志数据
+          * [CloudWatch Logs Insight](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
+        * 要分析存储在 S3 中的日志，可考虑使用 Athena（一种无服务器查询服务）
+          * [Athena](https://aws.amazon.com/cn/athena/?id=docs_gateway&whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) 是一种交互式查询服务，让您能够轻松使用标准 SQL 分析 Amazon S3 中的数据。Athena 没有服务器，因此您无需管理任何基础设施，且只需为您运行的查询付费
+        * 要分析结构化数据，可考虑使用 RDS（一种托管的关系数据库服务）
+          * [RDS](https://docs.aws.amazon.com/rds/?id=docs_gateway)是一种 Web 服务，可让用户更轻松地在云中设置、操作和扩展关系数据库。它可以经济有效的为用户提供一个容量可调的行业标准的关系数据库，并承担常见的数据库管理任务
+        * 要分析大量结构化数据，可考虑使用 RedShift（一种托管的 PB 级数据仓库服务）
+          * [RedShift](https://docs.aws.amazon.com/redshift/?id=docs_gateway)是一种快速、完全托管的 PB 级数据仓库服务，它使得通过现有商业智能工具对您的所有数据进行高效分析变得简单而实惠。它为从几百 GB 到 1PB 或更大的数据集而优化，且每年每 TB 花费不到 1000 USD，为最传统数据仓库存储解决方案成本的十分之一
+        * 要分析基于日志的数据，可考虑使用 Elasticsearch Service，这是流行的开源分析引擎 Elasticsearch 的托管版本
+          * [Elasticsearch Service](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway) 是一种托管服务，让用户能够轻松部署、运营和扩展 Elasticsearch (一种常见的开源搜索和分析引擎)。Amazon ES 还提供多种安全选项、高可用性、数据持久性以及对 Elasticsearch API 的直接访问权限
+      * 行动---在收集并分析了指标之后，可以使用它们来实现特定的结果或流程
+        * [监控与警报]()您可以使用 CloudWatch Alarms 在系统超出特定指标的安全阈值时获得通知,此警报可以触发手动或自动缓解措施
+          * [CloudWatch Alarms ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+          * [AWS X-Ray 文档](https://docs.aws.amazon.com/xray/?id=docs_gateway)提供请求跟踪、异常收集以及分析功能，使开发人员能够轻松分析分布式应用程序的行为
+        * [控制面板]()您可以使用 Cloudwatch 控制面板创建指标的控制面板,您可以使用这些控制面板跟踪和改善服务性能
+          * [Cloudwatch 控制面板](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)
+        * [数据驱动型决策]()
   * 5 成本优化
 
 
