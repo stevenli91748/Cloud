@@ -53,8 +53,11 @@
       * [IAM 最佳实践](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
       * [IAM 操作和资源](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
     * 1.2 网络安全
-      * [Amazon Virtual Private Cloud (VPC)](https://aws.amazon.com/cn/vpc/)
+      * [Amazon Virtual Private Cloud (VPC)](https://aws.amazon.com/cn/vpc/)云中预置一个逻辑隔离的部分，让您可以在自己定义的虚拟网络中启动 AWS 资源
       * [Application Load Balancer (ALB) ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+        * Application Load Balancers
+        * Network Load Balancers
+        * Classic Load Balancers
       * [AWS Web 应用程序防火墙 (WAF)](https://aws.amazon.com/cn/waf/)
       * [安全组](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
       * [深度防御](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))
