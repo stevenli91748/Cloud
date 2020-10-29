@@ -1,8 +1,8 @@
 
 **云原生应用12个类别：编排、应用程序开发、监控、日志记录、跟踪、容器注册、存储和数据库、运行时间、服务发现、服务网格、服务代理、安全以及数据流和消息流**
 
-[AWS 各个方向的学习路径](https://aws.amazon.com/cn/training/learning-paths/?nc2=sb_lp_all)|[AWS官方操作教程集---重要](https://aws.amazon.com/cn/getting-started/hands-on/)|[AWS官方实验教程](https://www.wellarchitectedlabs.com/security/)|
----|---|---|
+[AWS 各个方向的学习路径](https://aws.amazon.com/cn/training/learning-paths/?nc2=sb_lp_all)|[AWS官方操作教程集---重要](https://aws.amazon.com/cn/getting-started/hands-on/)|[AWS官方实验教程](https://www.wellarchitectedlabs.com/security/)|[AWS的产品一览](https://aws.amazon.com/cn/?nc2=h_lg)|
+---|---|---|---|
 
 [AWS DevOps](https://aws.amazon.com/cn/devops/what-is-devops/?nc1=f_cc)|[AWS 容器](https://aws.amazon.com/cn/containers/?nc1=f_cc)|[官方AWS SDK for Java 2.0 documentation examples](https://github.com/awsdocs/aws-doc-sdk-examples)|
 ---|---|---|
