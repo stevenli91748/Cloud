@@ -165,6 +165,15 @@
           * [Cloudwatch 控制面板](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)
         * [数据驱动型决策]()
   * 5 成本优化
+      * 按使用量付费
+        * [合理调整大小]()合理调整大小是指让服务预置和配置与工作负载相匹配。对于基于 EC2 的服务，这意味着选择正确的实例大小和系列。如果您的计算资源大部分闲置，请考虑使用较小的 EC2 实例。如果您的工作负载需要大量特定的系统资源，请考虑转用针对该资源优化的实例系列
+          * [AWS Compute Optimizer](https://aws.amazon.com/cn/compute-optimizer/)为您的工作负载建议最佳的 AWS 计算资源，以通过使用机器学习分析历史利用率指标来降低成本并提高性能
+        * [无服务器]()当您使用 Lambda 之类的无服务器技术时，只需为使用的部分付费。如果您的 Lambda 没有执行，则不会向您收费。无服务器是按使用量付费的最鲜明例子。在用例允许的情况下，选择无服务器可能是构建服务最具成本效益的方式
+        * [预留]()请求预留意味着承诺支付一定容量的费用以换取大幅折扣
+          * [ Savings Plans](https://aws.amazon.com/cn/getting-started/fundamentals-core-concepts/?e=gs2020&p=fundoverview)是一种灵活的定价模式，最高可节省 72% 的 AWS 计算使用费
+        * [Spot 实例]()使您可以利用未使用的 EC2 容量，最多可以以比按需价格少 90% 的折扣价格运行实例。这可以为您的容错工作负载节省大量资金
+          * [EC2 Spot 实例](https://aws.amazon.com/cn/ec2/spot/?cards.sort-by=item.additionalFields.startDateTime&cards.sort-order=asc)Amazon EC2 Spot 实例让您可以利用 AWS 云中未使用的 EC2 容量。与按需实例的价格相比，使用 Spot 实例最高可以享受 90% 的折扣
+      * 成本优化生命周期
 
 
 
