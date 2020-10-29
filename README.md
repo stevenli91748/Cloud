@@ -66,6 +66,15 @@
       * [AWS CloudTrail ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
       * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
   * 2. 性能效率
+      * 选择
+        * 计算---计算是处理数据的服务（例如，虚拟机）
+          * 基于VM的计算---是大多数人最熟悉的思维模式，但价格可能更高，并且需要更多维护
+          * 基于容器的计算---可以让您更好地划分工作负载，并且可以快速扩展，但配置和编排更为复杂
+          * 基于无服务器的计算---可消除大部分管理和扩展复杂性，但存在硬性系统限制，并且需要采用新的工具链和流程
+        * 存储---存储是数据的静态存储（例如，对象存储）
+        * 数据库---数据库是数据的有组织存储（例如，关系数据库）
+        * 网络---网络处理您的数据的移动（例如，内容交付网络）
+      * 扩展
   * 3. 可靠性
   * 4. 卓越运营
   * 5. 成本优化
