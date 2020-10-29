@@ -68,7 +68,7 @@
       * [客户管理的密钥 (CMK)](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-create-cmk.html)
       * [AWS CloudTrail ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
       * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
-  * 2. 性能效率
+  * 2 性能效率
       * [实例存储](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
       * [已预置的容量](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
       * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html)
@@ -109,9 +109,9 @@
          * [Auto Scaling](https://docs.aws.amazon.com/autoscaling/?id=docs_gateway)AWS 提供多种服务，可用于扩展您的应用程序,Auto Scaling 由 Amazon CloudWatch 支持，除 CloudWatch 以及您使用的其他 AWS 资源的服务费外，不额外收取费用
          * [Route 53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
          * [Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/?id=docs_gateway) 自动分配间应用程序的传入流量在多个目标， 如Amazon EC2 实例。它监控健康目标上的已注册目标和流量路的健康状况。Elastic Load Balancing 支持三种负载均衡器：应用程序负载均衡器、网络负载均衡器和 Classic 负载均衡器
-  * 3. 可靠性
-  * 4. 卓越运营
-  * 5. 成本优化
+  * 3 可靠性
+  * 4 卓越运营
+  * 5 成本优化
 
 
 
