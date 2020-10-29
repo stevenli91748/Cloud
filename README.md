@@ -69,12 +69,12 @@
       * [AWS CloudTrail ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
       * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
   * 2 性能效率
-      * [实例存储](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
-      * [已预置的容量](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
-      * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html)
-      * [AWS Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gateway)
-      * 选择
-        * 计算服务类别---计算是处理数据的服务（例如，虚拟机）
+      * [2.1 实例存储](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
+      * [2.2 已预置的容量](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
+      * [2.3 IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html)
+      * [2.4 AWS Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gateway)
+      * 2.5 选择
+        * 2.5.1 计算服务类别---计算是处理数据的服务（例如，虚拟机）
           * 基于VM的计算---是大多数人最熟悉的思维模式，但价格可能更高，并且需要更多维护
             * [EC2](https://docs.aws.amazon.com/ec2/?id=docs_gateway)是一种提供可调节计算容量的 Web 服务 – 简单来说，就是 Amazon 数据中心里的服务器 – 您可以使用它来构建和托管您的软件系统
             * [ECS](https://docs.aws.amazon.com/ecs/?id=docs_gateway)是一项高度可扩展的快速容器管理服务，可轻松运行、停止和管理 Amazon EC2 实例集群上的 Docker 容器
@@ -82,7 +82,7 @@
             * [Elastic Beanstalk ](https://docs.aws.amazon.com/elastic-beanstalk/?id=docs_gateway)可让您迅速地在 AWS 云中部署和管理应用程序，而无需为运行这些应用程序的基础设施操心。AWS Elastic Beanstalk 可降低管理的复杂性，但不会影响选择或控制。您只需上传应用程序，AWS Elastic Beanstalk 将自动处理有关容量预配置、负载均衡、扩展和应用程序运行状况监控的部署细节
           * 基于容器的计算---可以让您更好地划分工作负载，并且可以快速扩展，但配置和编排更为复杂
           * 基于无服务器的计算---可消除大部分管理和扩展复杂性，但存在硬性系统限制，并且需要采用新的工具链和流程
-        * 存储服务类别---存储是数据的静态存储（例如，对象存储）
+        * 2.5.2 存储服务类别---存储是数据的静态存储（例如，对象存储）
           * 文件存储
             * [EFS](https://docs.aws.amazon.com/efs/?id=docs_gateway)为 Amazon EC2 实例提供文件存储。借助 Amazon EFS，您可以创建文件系统、将文件系统挂载到 EC2 实例上，然后读取来自 EC2 实例的数据并将其写入文件系统，反之亦然
           * 块存储
@@ -91,7 +91,7 @@
             * [S3](https://docs.aws.amazon.com/s3/?id=docs_gateway)是一种面向 Internet 的存储服务。您可以通过 Amazon S3 随时在 Web 上的任何位置存储和检索的任意大小的数据。您可以使用 AWS 管理控制台简单而直观的 web 界面来完成这些任务
           * 存档存储
             * [S3 Glacier ](https://docs.aws.amazon.com/glacier/?id=docs_gateway)是一种针对不常用的数据（“冷数据”）而经过了优化的存储服务。 这项服务为数据存档和备份提供了持久且成本极低的存储解决方案及安全功能。使用 Amazon Glacier，您可以将数据经济高效地存储数月、数年，甚至数十年。Amazon Glacier 可让您将存储扩展到 AWS 并卸下操作以及管理负担，这样，您就不必担心容量规划、硬件配置、数据复制、硬件故障检测和恢复，或者耗时的硬件迁移等问题
-        * 数据库服务类别---数据库是数据的有组织存储（例如，关系数据库）
+        * 2.5.3 数据库服务类别---数据库是数据的有组织存储（例如，关系数据库）
           * 关系数据库---拥有联接和 ACID 属性，但性能和数据存储存在上限
             * [ACID](https://en.wikipedia.org/wiki/ACID)
             * [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)可以更好地控制底层数据库，并且可用于大多数关系数据库
@@ -102,13 +102,13 @@
             * [Redshift](https://docs.aws.amazon.com/redshift/?id=docs_gateway)是一种快速、完全托管的 PB 级数据仓库服务，它使得通过现有商业智能工具对您的所有数据进行高效分析变得简单而实惠。它为从几百 GB 到 1PB 或更大的数据集而优化，且每年每 TB 花费不到 1000 USD，为最传统数据仓库存储解决方案成本的十分之一
           * 数据索引和搜索---您可以索引和搜索来自各种来源的数据
             * [Elasticsearch Service ](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway)是一种托管服务，让用户能够轻松部署、运营和扩展 Elasticsearch (一种常见的开源搜索和分析引擎)。Amazon ES 还提供多种安全选项、高可用性、数据持久性以及对 Elasticsearch API 的直接访问权限
-        * 网络服务类别---网络处理您的数据的移动（例如，内容交付网络）
-      * 扩展
-         * [Route 53 路由策略](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
-         * [ALB 路由策略](https://aws.amazon.com/cn/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/)
-         * [Auto Scaling](https://docs.aws.amazon.com/autoscaling/?id=docs_gateway)AWS 提供多种服务，可用于扩展您的应用程序,Auto Scaling 由 Amazon CloudWatch 支持，除 CloudWatch 以及您使用的其他 AWS 资源的服务费外，不额外收取费用
-         * [Route 53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
-         * [Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/?id=docs_gateway) 自动分配间应用程序的传入流量在多个目标， 如Amazon EC2 实例。它监控健康目标上的已注册目标和流量路的健康状况。Elastic Load Balancing 支持三种负载均衡器：应用程序负载均衡器、网络负载均衡器和 Classic 负载均衡器
+        * 2.5.4 网络服务类别---网络处理您的数据的移动（例如，内容交付网络）
+      * 2.6 扩展
+         * [2.6.1 Route 53 路由策略](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+         * [2.6.2 ALB 路由策略](https://aws.amazon.com/cn/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/)
+         * [2.6.3 Auto Scaling](https://docs.aws.amazon.com/autoscaling/?id=docs_gateway)AWS 提供多种服务，可用于扩展您的应用程序,Auto Scaling 由 Amazon CloudWatch 支持，除 CloudWatch 以及您使用的其他 AWS 资源的服务费外，不额外收取费用
+         * [2.6.4 Route 53](https://docs.aws.amazon.com/route53/?id=docs_gateway)是一种可用性高、可扩展性强的域名系统 (DNS) Web 服务
+         * [2.6.5 Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/?id=docs_gateway) 自动分配间应用程序的传入流量在多个目标， 如Amazon EC2 实例。它监控健康目标上的已注册目标和流量路的健康状况。Elastic Load Balancing 支持三种负载均衡器：应用程序负载均衡器、网络负载均衡器和 Classic 负载均衡器
   * 3 可靠性
   * 4 卓越运营
   * 5 成本优化
