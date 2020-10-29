@@ -40,7 +40,7 @@
 
 # 目录
 * [AWS 架构完善的框架和五大支柱](https://aws.amazon.com/cn/getting-started/fundamentals-core-concepts/?e=gs2020&p=gsrc)
-  * 1. 安全性
+  * 1 安全性
     * 1.1 Identity and Access Management (IAM)
       * [IAM](https://aws.amazon.com/cn/iam/)
       * [权限边界](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
