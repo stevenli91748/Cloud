@@ -67,11 +67,14 @@
       * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
   * 2. 性能效率
       * 选择
-        * 计算---计算是处理数据的服务（例如，虚拟机）
+        * 计算服务类别---计算是处理数据的服务（例如，虚拟机）
           * 基于VM的计算---是大多数人最熟悉的思维模式，但价格可能更高，并且需要更多维护
+            * [EC2](https://docs.aws.amazon.com/ec2/?id=docs_gateway)直接使用 EC2 可以让您获得最大的控制权，但管理却最少
+            * [lightsail](https://docs.aws.amazon.com/lightsail/?id=docs_gateway)牺牲一部分自定义能力，但可以获得更多的托管体验
+            * [Elastic Beanstalk ](https://docs.aws.amazon.com/elastic-beanstalk/?id=docs_gateway)则介于两者之间，它为您的服务架构提供了一个固定的框架，但允许您通过配置进行自定义
           * 基于容器的计算---可以让您更好地划分工作负载，并且可以快速扩展，但配置和编排更为复杂
           * 基于无服务器的计算---可消除大部分管理和扩展复杂性，但存在硬性系统限制，并且需要采用新的工具链和流程
-        * 存储---存储是数据的静态存储（例如，对象存储）
+        * 存储服务类别---存储是数据的静态存储（例如，对象存储）
           * 文件存储
             * [EFS](https://docs.aws.amazon.com/efs/?id=docs_gateway)这样的文件系统非常适合让多个客户端访问同一数据
           * 块存储
@@ -80,8 +83,18 @@
             * [S3](https://docs.aws.amazon.com/s3/?id=docs_gateway)这样的对象存储非常适合需要由任意数量的客户端访问的大数据 Blob
           * 存档存储
             * [S3 Glacier ](https://docs.aws.amazon.com/glacier/?id=docs_gateway)这样的存档存储非常适合访问不频繁的大量数据
-        * 数据库---数据库是数据的有组织存储（例如，关系数据库）
-        * 网络---网络处理您的数据的移动（例如，内容交付网络）
+        * 数据库服务类别---数据库是数据的有组织存储（例如，关系数据库）
+          * 关系数据库---拥有联接和 ACID 属性，但性能和数据存储存在上限
+            * [ACID](https://en.wikipedia.org/wiki/ACID)
+            * [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)可以更好地控制底层数据库，并且可用于大多数关系数据库
+            * [Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)仅适用于某些版本的 MySQL 和 PostgreSQL，但负责管理底层存储并内置集群支持
+          * 非关系数据库---具有更灵活的架构，并且上限比关系数据库更高，但通常缺少联接和完整的 ACID 功能
+            * [DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway)
+          * 数据仓库解决方案---可以通过快速访问数 PB 的结构化数据，以实现大规模分析
+            * [Redshift](https://docs.aws.amazon.com/redshift/?id=docs_gateway)
+          * 数据索引和搜索---您可以索引和搜索来自各种来源的数据
+            * [Elasticsearch Service ](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway)
+        * 网络服务类别---网络处理您的数据的移动（例如，内容交付网络）
       * 扩展
   * 3. 可靠性
   * 4. 卓越运营
