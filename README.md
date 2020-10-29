@@ -66,34 +66,39 @@
       * [AWS CloudTrail ](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
       * [自定义密钥存储](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html)
   * 2. 性能效率
+      * [实例存储](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
+      * [已预置的容量](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
+      * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html)
+      * [AWS Lambda](https://docs.aws.amazon.com/lambda/?id=docs_gateway)
       * 选择
         * 计算服务类别---计算是处理数据的服务（例如，虚拟机）
           * 基于VM的计算---是大多数人最熟悉的思维模式，但价格可能更高，并且需要更多维护
-            * [EC2](https://docs.aws.amazon.com/ec2/?id=docs_gateway)直接使用 EC2 可以让您获得最大的控制权，但管理却最少
-            * [lightsail](https://docs.aws.amazon.com/lightsail/?id=docs_gateway)牺牲一部分自定义能力，但可以获得更多的托管体验
-            * [Elastic Beanstalk ](https://docs.aws.amazon.com/elastic-beanstalk/?id=docs_gateway)则介于两者之间，它为您的服务架构提供了一个固定的框架，但允许您通过配置进行自定义
+            * [EC2](https://docs.aws.amazon.com/ec2/?id=docs_gateway)是一种提供可调节计算容量的 Web 服务 – 简单来说，就是 Amazon 数据中心里的服务器 – 您可以使用它来构建和托管您的软件系统
+            * [ECS](https://docs.aws.amazon.com/ecs/?id=docs_gateway)是一项高度可扩展的快速容器管理服务，可轻松运行、停止和管理 Amazon EC2 实例集群上的 Docker 容器
+            * [lightsail](https://docs.aws.amazon.com/lightsail/?id=docs_gateway)仅需虚拟私有服务器的开发人员可以通过最简单的方式开始使用 AWS。Lightsail 包括您快速启动项目所需的一切 (虚拟机、基于 SSD 的存储、数据传输、DNS 管理和静态 IP)，价格低廉且可预测
+            * [Elastic Beanstalk ](https://docs.aws.amazon.com/elastic-beanstalk/?id=docs_gateway)可让您迅速地在 AWS 云中部署和管理应用程序，而无需为运行这些应用程序的基础设施操心。AWS Elastic Beanstalk 可降低管理的复杂性，但不会影响选择或控制。您只需上传应用程序，AWS Elastic Beanstalk 将自动处理有关容量预配置、负载均衡、扩展和应用程序运行状况监控的部署细节
           * 基于容器的计算---可以让您更好地划分工作负载，并且可以快速扩展，但配置和编排更为复杂
           * 基于无服务器的计算---可消除大部分管理和扩展复杂性，但存在硬性系统限制，并且需要采用新的工具链和流程
         * 存储服务类别---存储是数据的静态存储（例如，对象存储）
           * 文件存储
-            * [EFS](https://docs.aws.amazon.com/efs/?id=docs_gateway)这样的文件系统非常适合让多个客户端访问同一数据
+            * [EFS](https://docs.aws.amazon.com/efs/?id=docs_gateway)为 Amazon EC2 实例提供文件存储。借助 Amazon EFS，您可以创建文件系统、将文件系统挂载到 EC2 实例上，然后读取来自 EC2 实例的数据并将其写入文件系统，反之亦然
           * 块存储
-            * [EBS](https://docs.aws.amazon.com/ebs/?id=docs_gateway)这样的块存储服务非常适合持久存储来自单个 EC2 实例的数据
+            * [EBS](https://docs.aws.amazon.com/ebs/?id=docs_gateway)是一种 Web 服务，可提供数据块级存储卷以用于 EC2 实例。EBS 卷是高度可用的可靠存储卷，可以挂载到任何正在运行的实例，并可像硬盘驱动器一样使用
           * 对象存储
-            * [S3](https://docs.aws.amazon.com/s3/?id=docs_gateway)这样的对象存储非常适合需要由任意数量的客户端访问的大数据 Blob
+            * [S3](https://docs.aws.amazon.com/s3/?id=docs_gateway)是一种面向 Internet 的存储服务。您可以通过 Amazon S3 随时在 Web 上的任何位置存储和检索的任意大小的数据。您可以使用 AWS 管理控制台简单而直观的 web 界面来完成这些任务
           * 存档存储
-            * [S3 Glacier ](https://docs.aws.amazon.com/glacier/?id=docs_gateway)这样的存档存储非常适合访问不频繁的大量数据
+            * [S3 Glacier ](https://docs.aws.amazon.com/glacier/?id=docs_gateway)是一种针对不常用的数据（“冷数据”）而经过了优化的存储服务。 这项服务为数据存档和备份提供了持久且成本极低的存储解决方案及安全功能。使用 Amazon Glacier，您可以将数据经济高效地存储数月、数年，甚至数十年。Amazon Glacier 可让您将存储扩展到 AWS 并卸下操作以及管理负担，这样，您就不必担心容量规划、硬件配置、数据复制、硬件故障检测和恢复，或者耗时的硬件迁移等问题
         * 数据库服务类别---数据库是数据的有组织存储（例如，关系数据库）
           * 关系数据库---拥有联接和 ACID 属性，但性能和数据存储存在上限
             * [ACID](https://en.wikipedia.org/wiki/ACID)
             * [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)可以更好地控制底层数据库，并且可用于大多数关系数据库
             * [Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)仅适用于某些版本的 MySQL 和 PostgreSQL，但负责管理底层存储并内置集群支持
           * 非关系数据库---具有更灵活的架构，并且上限比关系数据库更高，但通常缺少联接和完整的 ACID 功能
-            * [DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway)
+            * [DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway)是一种完全托管的 NoSQL 数据库服务，提供快速而可预测的性能，能够实现无缝扩展。您可以使用 Amazon DynamoDB 创建一个数据库表来存储和检索任何大小的数据，并处理任何级别的请求流量。Amazon DynamoDB 可自动将表的数据和流量分布到足够多的服务器中，以处理客户指定的请求容量和数据存储量，同时保持一致的性能和高效的访问。
           * 数据仓库解决方案---可以通过快速访问数 PB 的结构化数据，以实现大规模分析
-            * [Redshift](https://docs.aws.amazon.com/redshift/?id=docs_gateway)
+            * [Redshift](https://docs.aws.amazon.com/redshift/?id=docs_gateway)是一种快速、完全托管的 PB 级数据仓库服务，它使得通过现有商业智能工具对您的所有数据进行高效分析变得简单而实惠。它为从几百 GB 到 1PB 或更大的数据集而优化，且每年每 TB 花费不到 1000 USD，为最传统数据仓库存储解决方案成本的十分之一
           * 数据索引和搜索---您可以索引和搜索来自各种来源的数据
-            * [Elasticsearch Service ](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway)
+            * [Elasticsearch Service ](https://docs.aws.amazon.com/elasticsearch-service/?id=docs_gateway)是一种托管服务，让用户能够轻松部署、运营和扩展 Elasticsearch (一种常见的开源搜索和分析引擎)。Amazon ES 还提供多种安全选项、高可用性、数据持久性以及对 Elasticsearch API 的直接访问权限
         * 网络服务类别---网络处理您的数据的移动（例如，内容交付网络）
       * 扩展
   * 3. 可靠性
