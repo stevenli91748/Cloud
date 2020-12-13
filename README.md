@@ -1,6 +1,16 @@
 
 **云原生应用12个类别：编排、应用程序开发、监控、日志记录、跟踪、容器注册、存储和数据库、运行时间、服务发现、服务网格、服务代理、安全以及数据流和消息流**
 
+* [1. 云原生应用](#云原生应用)
+* [2. AWS云原生应用 ](#AWS云原生应用 )
+
+
+# 云原生应用
+
+[Kubernetes 中文指南/云原生应用架构实践手册](https://jimmysong.io/kubernetes-handbook/)|
+---|
+
+# AWS云原生应用 
 [AWS 各个方向的学习路径](https://aws.amazon.com/cn/training/learning-paths/?nc2=sb_lp_all)|[AWS官方操作教程集---重要](https://aws.amazon.com/cn/getting-started/hands-on/)|[AWS官方实验教程](https://www.wellarchitectedlabs.com/security/)|[AWS的产品一览](https://aws.amazon.com/cn/?nc2=h_lg)|[AWS 树型文档](https://docs.aws.amazon.com/?e=gs&p=gsrc)|
 ---|---|---|---|---|
 
