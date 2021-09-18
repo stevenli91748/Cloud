@@ -8,6 +8,9 @@
 # 在线书籍
 
 * [阿里云云原生架构实践---2021](https://weread.qq.com/web/reader/731327d07248f2dd7319578)
+* [企业云计算： 原理，架构与实践指南](https://weread.qq.com/web/reader/92b32d6071db9dad92b8b8a)
+
+
 
 # 云原生应用目录
 
