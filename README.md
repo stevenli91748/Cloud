@@ -5,7 +5,11 @@
 * [2. AWS云原生应用 ](#AWS云原生应用 )
 
 
-# 云原生应用
+# 在线书籍
+
+* [阿里云云原生架构实践](https://weread.qq.com/web/reader/731327d07248f2dd7319578)
+
+# 云原生应用目录
 
 [Kubernetes 中文指南/云原生应用架构实践手册](https://jimmysong.io/kubernetes-handbook/)|
 ---|
