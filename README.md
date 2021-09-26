@@ -37,5 +37,7 @@
 
 ## 阿里云的参考
 * [使用GCP_EC2云服务器搭部署网络服务](https://www.cnblogs.com/zhijian1574/p/11957138.html)
+* [亚马逊云（EC2）搭建教程，可免费使用一年](https://coderschool.cn/2755.html)
+* [申请谷歌云教程，可免费使用一年](https://coderschool.cn/2598.html)
 
 
