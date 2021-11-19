@@ -9,8 +9,10 @@
 
 * [阿里云云原生架构实践---2021](https://weread.qq.com/web/reader/731327d07248f2dd7319578)
 * [企业云计算： 原理，架构与实践指南](https://weread.qq.com/web/reader/92b32d6071db9dad92b8b8a)
+* [未来架构： 从服务化到云原生](https://weread.qq.com/web/reader/71e327d07184551b71eeeb6)
 
 
+----
 
 # 云原生应用目录
 
